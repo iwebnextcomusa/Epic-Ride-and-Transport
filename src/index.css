@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #050B18;
+  }
+}
+
+/* Custom text outline / stroke values for the bold typography display */
+.text-outline-white {
+  -webkit-text-stroke: 1.5px #ffffff;
+}
+
+.text-outline-gold {
+  -webkit-text-stroke: 1.5px #C5A021;
+}
+
+@media (max-width: 640px) {
+  .text-outline-white {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-gold {
+    -webkit-text-stroke: 1px #C5A021;
+  }
+}
+
