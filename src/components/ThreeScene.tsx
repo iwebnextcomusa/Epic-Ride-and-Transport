@@ -31,13 +31,18 @@ export default function ThreeScene({ scrollProgress = 0 }: ThreeSceneProps) {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(width, height);
     renderer.setClearColor(0x000000, 0); // Transparent background to blend with CSS gradient
+    renderer.domElement.style.position = "absolute";
+    renderer.domElement.style.top = "0";
+    renderer.domElement.style.left = "0";
+    renderer.domElement.style.width = "100%";
+    renderer.domElement.style.height = "100%";
     container.appendChild(renderer.domElement);
 
     // Create Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
     scene.add(ambientLight);
 
-    const pointLight1 = new THREE.PointLight(0xd4af37, 2, 50); // Gold light
+    const pointLight1 = new THREE.PointLight(0xff6b00, 2, 50); // Premium orange light
     pointLight1.position.set(10, 10, 10);
     scene.add(pointLight1);
 
@@ -52,7 +57,7 @@ export default function ThreeScene({ scrollProgress = 0 }: ThreeSceneProps) {
     // 1. Interactive 3D Gold Transport Grid (represents premium routes)
     const size = 60;
     const divisions = 30;
-    const gridHelper = new THREE.GridHelper(size, divisions, 0xd4af37, 0x1d2d44);
+    const gridHelper = new THREE.GridHelper(size, divisions, 0xff6b00, 0x1d2d44);
     gridHelper.position.y = -2;
     group.add(gridHelper);
 
@@ -62,7 +67,7 @@ export default function ThreeScene({ scrollProgress = 0 }: ThreeSceneProps) {
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
-    const goldColor = new THREE.Color(0xd4af37);
+    const orangeColor = new THREE.Color(0xff6b00);
     const navyColor = new THREE.Color(0x0077ff);
 
     for (let i = 0; i < particleCount; i++) {
@@ -75,9 +80,9 @@ export default function ThreeScene({ scrollProgress = 0 }: ThreeSceneProps) {
       positions[i * 3 + 1] = y;
       positions[i * 3 + 2] = z;
 
-      // Color interpolation representing luxury gold and navy
+      // Color interpolation representing luxury orange and navy
       const mixRatio = Math.random();
-      const finalColor = new THREE.Color().lerpColors(goldColor, navyColor, mixRatio);
+      const finalColor = new THREE.Color().lerpColors(orangeColor, navyColor, mixRatio);
       colors[i * 3] = finalColor.r;
       colors[i * 3 + 1] = finalColor.g;
       colors[i * 3 + 2] = finalColor.b;
@@ -116,7 +121,7 @@ export default function ThreeScene({ scrollProgress = 0 }: ThreeSceneProps) {
     // 3. Central Abstract Luxury Orbital Ring (represents Epic Rides sphere of operation)
     const ringGeometry = new THREE.TorusGeometry(3, 0.05, 16, 100);
     const ringMaterial = new THREE.MeshStandardMaterial({
-      color: 0xd4af37, // Gold accent
+      color: 0xff6b00, // Premium orange accent
       roughness: 0.1,
       metalness: 0.9,
       wireframe: true,

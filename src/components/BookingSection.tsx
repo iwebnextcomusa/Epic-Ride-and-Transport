@@ -149,13 +149,13 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
 
   return (
     <div id="epic-ride-booking-view" className="bg-[#050B18] text-white px-4 py-16 sm:px-6 lg:px-8 relative">
-      <div className="absolute top-[20%] right-[10%] h-96 w-96 rounded-full bg-[#C5A021]/3 blur-3xl pointer-events-none" />
+      <div className="absolute top-[20%] right-[10%] h-96 w-96 rounded-full bg-[#FF6B00]/3 blur-3xl pointer-events-none" />
       
       <div className="mx-auto max-w-5xl relative z-10">
         
         {/* Title */}
         <div className="text-center space-y-4 mb-12">
-          <span className="text-[10px] font-bold tracking-[0.25em] text-[#C5A021] uppercase font-mono">
+          <span className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
             Online Dispatch Gate
           </span>
           <h1 className="font-sans text-4xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
@@ -196,7 +196,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                 </div>
                 <div className="flex justify-between">
                   <span>Tracking Ref ID:</span>
-                  <span className="font-bold text-[#C5A021]">{successDetails.referenceId}</span>
+                  <span className="font-bold text-[#FF6B00]">{successDetails.referenceId}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Est Price Quote:</span>
@@ -221,7 +221,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
 
               <button
                 onClick={() => setSuccessDetails(null)}
-                className="mt-4 rounded-sm bg-[#C5A021] text-[#050B18] font-bold uppercase tracking-widest text-xs px-6 py-3 px-10 shadow transition-colors hover:bg-amber-400"
+                className="mt-4 rounded-sm bg-[#FF6B00] text-[#050B18] font-bold uppercase tracking-widest text-xs px-6 py-3 px-10 shadow transition-colors hover:bg-orange-500"
               >
                 Book another request
               </button>
@@ -238,7 +238,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
               
               {/* Part 1: Trip Itinerary specifications */}
               <div className="space-y-4">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400 font-mono flex items-center space-x-2">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-[#FF6B00] font-mono flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
                   <span>1. Trip Itinerary</span>
                 </h3>
@@ -256,7 +256,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                         onChange={handleInputChange}
                         required
                         placeholder="e.g. Houston IAH Airport / Hotel Name"
-                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-10 text-xs text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-10 text-xs text-white placeholder-slate-500 focus:border-[#FF6B00] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -273,7 +273,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                         onChange={handleInputChange}
                         required
                         placeholder="e.g. Downtown Dallas Office / Address"
-                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-10 text-xs text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-10 text-xs text-white placeholder-slate-500 focus:border-[#FF6B00] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -291,7 +291,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                         value={formData.date}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 text-xs text-white uppercase font-mono tracking-wider focus:border-amber-400 focus:outline-none"
+                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 text-xs text-white uppercase font-mono tracking-wider focus:border-[#FF6B00] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -307,7 +307,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                         value={formData.time}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 text-xs text-white font-mono focus:border-amber-400 focus:outline-none"
+                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 text-xs text-white font-mono focus:border-[#FF6B00] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -321,7 +321,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                         name="passengers"
                         value={formData.passengers}
                         onChange={handleInputChange}
-                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-8 text-xs text-white focus:border-amber-400 focus:outline-none font-mono"
+                        className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-8 text-xs text-white focus:border-[#FF6B00] focus:outline-none font-mono"
                       >
                         {[...Array(56)].map((_, i) => (
                           <option key={i + 1} value={i + 1}>
@@ -336,7 +336,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
 
               {/* Part 2: Vehicle Specs Class selection */}
               <div className="space-y-4 pt-4 border-t border-white/5">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400 font-mono flex items-center space-x-2">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-[#FF6B00] font-mono flex items-center space-x-2">
                   <Users className="h-4 w-4" />
                   <span>2. Vehicle Specifications</span>
                 </h3>
@@ -350,7 +350,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                       name="vehicleType"
                       value={formData.vehicleType}
                       onChange={handleInputChange}
-                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-8 text-xs text-white focus:border-amber-400 focus:outline-none"
+                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 pl-3.5 pr-8 text-xs text-white focus:border-[#FF6B00] focus:outline-none"
                     >
                       <option value="Standard Taxi Sedans">Standard Taxi Sedans (1-4 Passengers)</option>
                       <option value="Luxury SUVs">Luxury SUVs (1-6 Passengers)</option>
@@ -370,7 +370,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                       value={formData.specialRequests}
                       onChange={handleInputChange}
                       placeholder="e.g. Luggage counts, Child booster seats, Airport baggage meet..."
-                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-505 focus:border-amber-400 focus:outline-none h-11"
+                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-505 focus:border-[#FF6B00] focus:outline-none h-11"
                     />
                   </div>
                 </div>
@@ -378,7 +378,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
 
               {/* Part 3: Secondary Contact coordinates */}
               <div className="space-y-4 pt-4 border-t border-white/5">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400 font-mono flex items-center space-x-2">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-[#FF6B00] font-mono flex items-center space-x-2">
                   <User className="h-4 w-4" />
                   <span>3. Guest Contact details</span>
                 </h3>
@@ -395,7 +395,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                       onChange={handleInputChange}
                       required
                       placeholder="John Doe"
-                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-500 focus:border-[#FF6B00] focus:outline-none"
                     />
                   </div>
 
@@ -410,7 +410,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                       onChange={handleInputChange}
                       required
                       placeholder="name@company.com"
-                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-500 focus:border-[#FF6B00] focus:outline-none"
                     />
                   </div>
 
@@ -425,7 +425,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                       onChange={handleInputChange}
                       required
                       placeholder="(409) 951-0839"
-                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none font-mono"
+                      className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-500 focus:border-[#FF6B00] focus:outline-none font-mono"
                     />
                   </div>
                 </div>
@@ -436,7 +436,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full py-4 rounded bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 text-xs tracking-widest font-extrabold uppercase shadow shadow-amber-500/10 hover:shadow-amber-500/30 transition-transform active:translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 rounded bg-gradient-to-r from-[#FF6B00] to-orange-700 text-slate-950 text-xs tracking-widest font-extrabold uppercase shadow shadow-orange-500/10 hover:shadow-orange-500/30 transition-transform active:translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isLoading ? "Validating & Staging Reservation..." : "Submit Reservation Request"}
                 </button>
@@ -448,12 +448,12 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
             <div className="space-y-6">
               
               {/* Est. Quote ticket info */}
-              <div className="rounded-2xl border border-white/5 bg-[#d4af37]/5 px-6 py-8 backdrop-blur-sm text-center space-y-4">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber-400/10 border border-amber-500/20">
-                  <FileText className="h-5 w-5 text-amber-400" />
+              <div className="rounded-2xl border border-white/5 bg-[#FF6B00]/5 px-6 py-8 backdrop-blur-sm text-center space-y-4">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-orange-500/10 border border-orange-500/20">
+                  <FileText className="h-5 w-5 text-[#FF6B00]" />
                 </div>
                 <div>
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-[#d4af37] font-mono">
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-[#FF6B00] font-mono">
                     Live Booking Estimate
                   </h3>
                   <div className="text-4xl font-extrabold text-white mt-1 leading-none font-sans tracking-wide">
@@ -499,7 +499,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
               {/* Call Hotline indicator */}
               <div className="p-4 border border-white/5 rounded-2xl bg-white/5 text-center text-xs font-mono">
                 <p className="text-slate-400 text-[10px] mb-1">IMMEDIATE SECURE BOOKING HELP</p>
-                <a href="tel:4099510839" className="text-amber-400 font-extrabold text-sm hover:underline">
+                <a href="tel:4099510839" className="text-[#FF6B00] font-extrabold text-sm hover:underline">
                   (409) 951-0839
                 </a>
               </div>

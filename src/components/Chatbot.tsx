@@ -71,11 +71,11 @@ export default function Chatbot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="group flex h-14 w-14 items-center justify-center rounded-sm bg-[#C5A021] text-[#050B18] shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95"
+          className="group flex h-14 w-14 items-center justify-center rounded-sm bg-[#FF6B00] text-[#050B18] shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95"
           title="Chat with Texas Transport Assistant"
         >
           <MessageSquare className="h-6 w-6 transition-transform group-hover:rotate-12" />
-          <span className="absolute -left-36 top-2 hidden rounded-sm bg-slate-950 px-3 py-1 text-xs font-bold text-[#C5A021] border border-[#C5A021]/30 group-hover:block whitespace-nowrap uppercase font-mono tracking-wider">
+          <span className="absolute -left-36 top-2 hidden rounded-sm bg-slate-950 px-3 py-1 text-xs font-bold text-[#FF6B00] border border-[#FF6B00]/30 group-hover:block whitespace-nowrap uppercase font-mono tracking-wider">
             Need Ride Help? Chat Live
           </span>
         </button>
@@ -87,8 +87,8 @@ export default function Chatbot() {
           {/* Header */}
           <div className="flex items-center justify-between bg-slate-900 border-b border-white/10 p-4">
             <div className="flex items-center space-x-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-[#C5A021]/10 border border-[#C5A021]/30">
-                <MessageSquare className="h-5 w-5 text-[#C5A021] animate-pulse" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-[#FF6B00]/10 border border-[#FF6B00]/30">
+                <MessageSquare className="h-5 w-5 text-[#FF6B00] animate-pulse" />
               </div>
               <div className="flex flex-col">
                 <span className="text-xs font-black tracking-widest text-white uppercase flex items-center">
@@ -113,7 +113,7 @@ export default function Chatbot() {
           </div>
 
           {/* Secure Banner Note */}
-          <div className="flex items-center justify-center space-x-1 bg-[#C5A021]/5 py-1.5 px-3 border-b border-[#C5A021]/15 text-[10px] font-bold text-[#C5A021] font-mono uppercase tracking-wider">
+          <div className="flex items-center justify-center space-x-1 bg-[#FF6B00]/5 py-1.5 px-3 border-b border-[#FF6B00]/15 text-[10px] font-bold text-[#FF6B00] font-mono uppercase tracking-wider">
             <Shield className="h-3 w-3" />
             <span>Secure Multi-Agent SSL Gateway</span>
           </div>
@@ -131,7 +131,7 @@ export default function Chatbot() {
                 <div
                   className={`max-w-[85%] rounded-sm px-4 py-2.5 text-xs tracking-wide leading-relaxed ${
                     msg.role === "user"
-                      ? "bg-[#C5A021] text-slate-950 font-bold shadow-md"
+                      ? "bg-[#FF6B00] text-slate-950 font-bold shadow-md"
                       : "bg-[#0A192F]/40 text-slate-300 border border-white/10"
                   }`}
                 >
@@ -147,9 +147,9 @@ export default function Chatbot() {
             {isLoading && (
               <div className="flex justify-start">
                 <div className="bg-[#0A192F]/40 text-slate-300 rounded-sm border border-white/10 px-4 py-3 text-xs flex items-center space-x-1.5">
-                  <div className="h-1.5 w-1.5 rounded-full bg-[#C5A021] animate-bounce" style={{ animationDelay: "0ms" }} />
-                  <div className="h-1.5 w-1.5 rounded-full bg-[#C5A021] animate-bounce" style={{ animationDelay: "150ms" }} />
-                  <div className="h-1.5 w-1.5 rounded-full bg-[#C5A021] animate-bounce" style={{ animationDelay: "300ms" }} />
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#FF6B00] animate-bounce" style={{ animationDelay: "0ms" }} />
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#FF6B00] animate-bounce" style={{ animationDelay: "150ms" }} />
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#FF6B00] animate-bounce" style={{ animationDelay: "300ms" }} />
                   <span className="text-[9px] text-slate-500 font-mono pl-1 uppercase font-bold tracking-wider">calculating routes...</span>
                 </div>
               </div>
@@ -166,13 +166,13 @@ export default function Chatbot() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Ask about rides, rates, or locations..."
-              className="flex-1 rounded-sm border border-white/10 bg-slate-950 px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:border-[#C5A021] focus:outline-none focus:ring-1 focus:ring-[#C5A021] font-sans transition-all"
+              className="flex-1 rounded-sm border border-white/10 bg-slate-950 px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:border-[#FF6B00] focus:outline-none focus:ring-1 focus:ring-[#FF6B00] font-sans transition-all"
               disabled={isLoading}
             />
             <button
               type="submit"
               disabled={!message.trim() || isLoading}
-              className={`flex h-9 w-9 items-center justify-center rounded-sm bg-[#C5A021] text-[#050B18] shadow transition-all ${
+              className={`flex h-9 w-9 items-center justify-center rounded-sm bg-[#FF6B00] text-[#050B18] shadow transition-all ${
                 !message.trim() || isLoading
                   ? "opacity-45 cursor-not-allowed"
                   : "hover:scale-105 active:scale-95"

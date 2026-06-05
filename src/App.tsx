@@ -65,7 +65,7 @@ export default function App() {
   };
 
   return (
-    <div id="epic-ride-app-root" className="min-h-screen bg-[#050B18] font-sans text-slate-100 flex flex-col justify-between selection:bg-[#C5A021] selection:text-slate-950 overflow-x-hidden antialiased">
+    <div id="epic-ride-app-root" className="min-h-screen bg-[#050B18] font-sans text-slate-100 flex flex-col justify-between selection:bg-[#FF6B00] selection:text-slate-950 overflow-x-hidden antialiased">
       
       {/* 3D WebGL Three.js Particle Environment Background */}
       <ThreeScene scrollProgress={scrollProgress} />
@@ -126,7 +126,7 @@ export default function App() {
         <button
           onClick={handleScrollToTop}
           id="scroll-to-top-button"
-          className="fixed bottom-6 left-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white/5 bg-slate-950/80 text-amber-400 shadow-lg shadow-amber-500/10 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-400/40 active:scale-95 cursor-pointer"
+          className="fixed bottom-6 left-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white/5 bg-slate-950/80 text-[#FF6B00] shadow-lg shadow-orange-500/10 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-[#FF6B00]/40 active:scale-95 cursor-pointer"
           title="Scroll Back to Top"
         >
           <ArrowUp className="h-5 w-5" />

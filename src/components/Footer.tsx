@@ -22,17 +22,17 @@ export default function Footer({ setActiveTab }: FooterProps) {
           {/* Brand Info Column */}
           <div className="col-span-1 space-y-4">
             <div 
-              className="flex cursor-pointer items-center space-x-3 text-[#C5A021]" 
+              className="flex cursor-pointer items-center space-x-3 text-[#FF6B00]" 
               onClick={() => handleNavClick("home")}
             >
-              <div className="w-10 h-10 bg-[#C5A021] flex items-center justify-center rounded-sm shadow-md">
+              <div className="w-10 h-10 bg-[#FF6B00] flex items-center justify-center rounded-sm shadow-md">
                 <span className="text-[#050B18] font-black text-xl">ER</span>
               </div>
               <div className="flex flex-col">
                 <span className="font-sans text-base font-extrabold tracking-tighter text-white uppercase">
                   Epic Ride
                 </span>
-                <span className="text-[10px] font-bold tracking-widest text-[#C5A021] uppercase font-mono">
+                <span className="text-[10px] font-bold tracking-widest text-[#FF6B00] uppercase font-mono">
                   &amp; Transport
                 </span>
               </div>
@@ -43,14 +43,14 @@ export default function Footer({ setActiveTab }: FooterProps) {
             </p>
             
             <div className="flex items-center space-x-2 text-[10px] text-slate-500 font-mono">
-              <Shield className="h-3.5 w-3.5 text-[#C5A021]" />
+              <Shield className="h-3.5 w-3.5 text-[#FF6B00]" />
               <span>Licensed &amp; Fully Insured Carrier</span>
             </div>
           </div>
 
           {/* Page Links Column */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#C5A021] mb-4 font-mono">
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF6B00] mb-4 font-mono">
               Quick Links
             </h3>
             <ul className="space-y-2 text-xs">
@@ -84,7 +84,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
 
           {/* Services Column */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#C5A021] mb-4 font-mono">
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF6B00] mb-4 font-mono">
               Services
             </h3>
             <ul className="space-y-2 text-xs text-gray-400">
@@ -118,18 +118,18 @@ export default function Footer({ setActiveTab }: FooterProps) {
 
           {/* Contact Details Column */}
           <div className="space-y-4">
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#C5A021] mb-1 font-mono">
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF6B00] mb-1 font-mono">
               Main Dispatch
             </h3>
             <ul className="space-y-2 text-xs font-mono text-gray-400">
               <li className="flex items-center space-x-2">
-                <Phone className="h-3.5 w-3.5 text-[#C5A021]" />
+                <Phone className="h-3.5 w-3.5 text-[#FF6B00]" />
                 <a href="tel:4099510839" className="hover:text-white transition-colors">
                   (409) 951-0839
                 </a>
               </li>
               <li className="flex items-baseline space-x-2">
-                <Mail className="h-3.5 w-3.5 text-[#C5A021] translate-y-0.5" />
+                <Mail className="h-3.5 w-3.5 text-[#FF6B00] translate-y-0.5" />
                 <a
                   href="mailto:epicrideandtransport@gmail.com"
                   className="hover:text-white transition-colors break-all"
@@ -138,7 +138,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
                 </a>
               </li>
               <li className="flex items-baseline space-x-2">
-                <MapPin className="h-3.5 w-3.5 text-[#C5A021] translate-y-0.5" />
+                <MapPin className="h-3.5 w-3.5 text-[#FF6B00] translate-y-0.5" />
                 <span>Texas, USA Coverage Area</span>
               </li>
             </ul>
@@ -150,14 +150,14 @@ export default function Footer({ setActiveTab }: FooterProps) {
           <div className="flex items-center space-x-4">
             <span>&copy; {new Date().getFullYear()} Epic Ride and Transport LLC. All rights reserved.</span>
             <span className="hidden md:inline">|</span>
-            <button className="hover:text-[#C5A021]">Privacy Policy</button>
+            <button className="hover:text-[#FF6B00]">Privacy Policy</button>
             <span className="hidden md:inline">|</span>
-            <button className="hover:text-[#C5A021]">Terms of Service</button>
+            <button className="hover:text-[#FF6B00]">Terms of Service</button>
           </div>
 
           {/* Mandatory User Naming Credit Link */}
           <div className="text-center md:text-right">
-            Developed by <a href="https://iwebnext.com" target="_blank" rel="noreferrer" className="text-[#C5A021] hover:text-amber-400 underline underline-offset-4 decoration-[#C5A021]/20">iWebNext</a>
+            Developed by <a href="https://iwebnext.com" target="_blank" rel="noreferrer" className="text-[#FF6B00] hover:text-orange-500 underline underline-offset-4 decoration-[#FF6B00]/20">iWebNext</a>
           </div>
         </div>
       </div>

@@ -61,7 +61,7 @@ export default function ContactSection() {
         
         {/* Title */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <span className="text-[11px] font-bold tracking-widest text-amber-400 uppercase font-mono">
+          <span className="text-[11px] font-bold tracking-widest text-[#FF6B00] uppercase font-mono">
             Get in touch
           </span>
           <h1 className="font-sans text-4xl font-extrabold tracking-tight uppercase sm:text-6xl text-white">
@@ -86,12 +86,12 @@ export default function ContactSection() {
               <div className="space-y-4 text-xs font-sans">
                 {/* Telephone */}
                 <div className="flex items-start space-x-3.5 border-b border-white/5 pb-4">
-                  <div className="rounded bg-amber-400/5 p-2.5 border border-amber-500/10 text-amber-400 shrink-0">
+                  <div className="rounded bg-orange-500/5 p-2.5 border border-orange-500/10 text-[#FF6B00] shrink-0">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
                     <span className="text-[10px] uppercase font-bold tracking-widest text-slate-500 block mb-0.5 font-mono">Dispatch Phone Hotline</span>
-                    <a href="tel:4099510839" className="text-base font-bold text-white font-mono hover:text-amber-400 transition-colors">
+                    <a href="tel:4099510839" className="text-base font-bold text-white font-mono hover:text-[#FF6B00] transition-colors">
                       (409) 951-0839
                     </a>
                   </div>
@@ -99,12 +99,12 @@ export default function ContactSection() {
 
                 {/* Email address */}
                 <div className="flex items-start space-x-3.5 border-b border-white/5 pb-4">
-                  <div className="rounded bg-amber-400/5 p-2.5 border border-amber-500/10 text-amber-400 shrink-0">
+                  <div className="rounded bg-orange-500/5 p-2.5 border border-orange-500/10 text-[#FF6B00] shrink-0">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
                     <span className="text-[10px] uppercase font-bold tracking-widest text-slate-500 block mb-0.5 font-mono">Operations Email desk</span>
-                    <a href="mailto:epicrideandtransport@gmail.com" className="text-base font-semibold text-white font-mono hover:text-amber-400 transition-colors break-all">
+                    <a href="mailto:epicrideandtransport@gmail.com" className="text-base font-semibold text-white font-mono hover:text-[#FF6B00] transition-colors break-all">
                       epicrideandtransport@gmail.com
                     </a>
                   </div>
@@ -112,7 +112,7 @@ export default function ContactSection() {
 
                 {/* Licensed Coverage geographical */}
                 <div className="flex items-start space-x-3.5">
-                  <div className="rounded bg-[#d4af37]/5 p-2.5 border border-amber-500/10 text-amber-400 shrink-0">
+                  <div className="rounded bg-[#FF6B00]/5 p-2.5 border border-orange-500/10 text-[#FF6B00] shrink-0">
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
@@ -127,8 +127,8 @@ export default function ContactSection() {
 
             {/* Business Hours Panel */}
             <div className="rounded-2xl border border-white/5 bg-slate-900/30 p-6 sm:p-8 backdrop-blur-sm">
-              <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-[#d4af37] border-b border-white/5 pb-3.5 mb-4 flex items-center space-x-2">
-                <Clock className="h-4.5 w-4.5 text-amber-400 animate-pulse" />
+              <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF6B00] border-b border-white/5 pb-3.5 mb-4 flex items-center space-x-2">
+                <Clock className="h-4.5 w-4.5 text-[#FF6B00] animate-pulse" />
                 <span>24/7 Operations Duty Schedule</span>
               </h3>
 
@@ -159,7 +159,7 @@ export default function ContactSection() {
                 </p>
                 <button
                   onClick={() => setIsSuccess(false)}
-                  className="rounded bg-amber-400 text-slate-950 font-bold uppercase tracking-widest text-xs py-2 px-6 shadow"
+                  className="rounded bg-[#FF6B00] text-slate-950 font-bold uppercase tracking-widest text-xs py-2 px-6 shadow hover:bg-orange-600 transition-colors"
                 >
                   Send another message
                 </button>
@@ -192,7 +192,7 @@ export default function ContactSection() {
                     value={formInput.name}
                     onChange={handleInputChange}
                     placeholder="Guest Name"
-                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white focus:border-[#FF6B00] focus:outline-none"
                     required
                   />
                 </div>
@@ -208,7 +208,7 @@ export default function ContactSection() {
                     value={formInput.email}
                     onChange={handleInputChange}
                     placeholder="yourname@gmail.com"
-                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white focus:border-[#FF6B00] focus:outline-none"
                     required
                   />
                 </div>
@@ -224,7 +224,7 @@ export default function ContactSection() {
                     value={formInput.subject}
                     onChange={handleInputChange}
                     placeholder="e.g. Corporate Charter Account / Special Event Rates"
-                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white focus:border-[#FF6B00] focus:outline-none"
                   />
                 </div>
 
@@ -238,7 +238,7 @@ export default function ContactSection() {
                     value={formInput.message}
                     onChange={handleInputChange}
                     placeholder="Describe your transportation constraints, specific timings, or luggage details."
-                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-600 focus:border-amber-400 focus:outline-none h-28 resize-none"
+                    className="w-full rounded-lg border border-white/10 bg-slate-950 py-2.5 px-3.5 text-xs text-white placeholder-slate-600 focus:border-[#FF6B00] focus:outline-none h-28 resize-none"
                     required
                   />
                 </div>
@@ -248,7 +248,7 @@ export default function ContactSection() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3.5 rounded bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 text-xs font-bold uppercase tracking-widest flex items-center justify-center space-x-2 transition-transform active:translate-y-0.5"
+                    className="w-full py-3.5 rounded bg-gradient-to-r from-[#FF6B00] to-orange-700 text-slate-950 text-xs font-bold uppercase tracking-widest flex items-center justify-center space-x-2 transition-transform active:translate-y-0.5 cursor-pointer"
                   >
                     <span>{isSubmitting ? "Transmitting Detail..." : "Send Message"}</span>
                     <Send className="h-4 w-4" />
@@ -257,7 +257,7 @@ export default function ContactSection() {
 
                 {/* SSL encryption note */}
                 <div className="flex items-center space-x-2 text-[10px] text-slate-500 font-mono pt-2 border-t border-white/5">
-                  <ShieldAlert className="h-4 w-4 text-amber-500/60" />
+                  <ShieldAlert className="h-4 w-4 text-orange-500/60" />
                   <span>Encrypted message channels secured with TLS 1.3 standard protocols.</span>
                 </div>
 

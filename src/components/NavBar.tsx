@@ -38,16 +38,16 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
           {/* Logo Brand styling */}
           <div 
             onClick={() => handleNavClick("home")}
-            className="flex cursor-pointer items-center space-x-3 text-[#C5A021]"
+            className="flex cursor-pointer items-center space-x-3 text-[#FF6B00]"
           >
-            <div className="w-10 h-10 bg-[#C5A021] flex items-center justify-center rounded-sm shadow-md">
+            <div className="w-10 h-10 bg-[#FF6B00] flex items-center justify-center rounded-sm shadow-md">
               <span className="text-[#050B18] font-black text-xl">ER</span>
             </div>
             <div className="flex flex-col">
               <span className="font-sans text-lg font-extrabold tracking-tighter text-white uppercase sm:text-xl">
                 Epic Ride
               </span>
-              <span className="text-[10px] font-bold tracking-widest text-[#C5A021] uppercase font-mono">
+              <span className="text-[10px] font-bold tracking-widest text-[#FF6B00] uppercase font-mono">
                 &amp; Transport
               </span>
             </div>
@@ -61,7 +61,7 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
                 onClick={() => handleNavClick(item.id)}
                 className={`px-4 py-2 font-sans text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm border ${
                   activeTab === item.id
-                    ? "bg-[#C5A021]/10 text-[#C5A021] border-[#C5A021]/30"
+                    ? "bg-[#FF6B00]/10 text-[#FF6B00] border-[#FF6B00]/30"
                     : "text-gray-300 hover:text-white hover:bg-white/5 border-transparent"
                 }`}
               >
@@ -76,14 +76,14 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
               <p className="text-[9px] uppercase tracking-wider text-gray-400">Available 24/7</p>
               <a
                 href="tel:4099510839"
-                className="text-[#C5A021] font-mono font-bold tracking-wide hover:brightness-110"
+                className="text-[#FF6B00] font-mono font-bold tracking-wide hover:brightness-110"
               >
                 (409) 951-0839
               </a>
             </div>
             <button
               onClick={onOpenBooking}
-              className="bg-white text-black px-6 py-2.5 text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-200 hover:bg-[#C5A021] hover:text-[#050B18]"
+              className="bg-white text-black px-6 py-2.5 text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-200 hover:bg-[#FF6B00] hover:text-[#050B18]"
             >
               Get a Quote
             </button>
@@ -93,7 +93,7 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
           <div className="flex lg:hidden items-center space-x-3">
             <a
               href="tel:4099510839"
-              className="flex items-center justify-center h-10 w-10 rounded-sm bg-white/5 border border-white/10 text-[#C5A021]"
+              className="flex items-center justify-center h-10 w-10 rounded-sm bg-white/5 border border-white/10 text-[#FF6B00]"
             >
               <Phone className="h-5 w-5" />
             </a>
@@ -121,7 +121,7 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
                 onClick={() => handleNavClick(item.id)}
                 className={`block w-full text-left px-4 py-3 text-xs font-bold uppercase tracking-widest rounded-sm transition-colors ${
                   activeTab === item.id
-                    ? "bg-[#C5A021]/15 text-[#C5A021] border-l-2 border-[#C5A021]"
+                    ? "bg-[#FF6B00]/15 text-[#FF6B00] border-l-2 border-[#FF6B00]"
                     : "text-slate-300 hover:text-white hover:bg-white/5"
                 }`}
               >
@@ -131,9 +131,9 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
             <div className="pt-4 pb-2 border-t border-white/10">
               <a
                 href="tel:4099510839"
-                className="flex items-center space-x-3 px-4 py-3 text-base font-bold text-[#C5A021]"
+                className="flex items-center space-x-3 px-4 py-3 text-base font-bold text-[#FF6B00]"
               >
-                <Phone className="h-5 w-5 text-[#C5A021]" />
+                <Phone className="h-5 w-5 text-[#FF6B00]" />
                 <span className="font-mono text-lg tracking-wide">(409) 951-0839</span>
               </a>
               <div className="px-4 mt-3">
@@ -142,7 +142,7 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
                     handleNavClick("booking");
                     onOpenBooking();
                   }}
-                  className="w-full text-center bg-[#C5A021] py-3 rounded-sm text-xs font-bold text-[#050B18] uppercase tracking-widest transition-colors hover:bg-amber-400"
+                  className="w-full text-center bg-[#FF6B00] py-3 rounded-sm text-xs font-bold text-[#050B18] uppercase tracking-widest transition-colors hover:bg-orange-500"
                 >
                   Book Instant Ride
                 </button>

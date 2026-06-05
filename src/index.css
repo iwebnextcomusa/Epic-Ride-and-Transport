@@ -21,16 +21,16 @@
   -webkit-text-stroke: 1.5px #ffffff;
 }
 
-.text-outline-gold {
-  -webkit-text-stroke: 1.5px #C5A021;
+.text-outline-orange {
+  -webkit-text-stroke: 1.5px #FF6B00;
 }
 
 @media (max-width: 640px) {
   .text-outline-white {
     -webkit-text-stroke: 1px #ffffff;
   }
-  .text-outline-gold {
-    -webkit-text-stroke: 1px #C5A021;
+  .text-outline-orange {
+    -webkit-text-stroke: 1px #FF6B00;
   }
 }
 

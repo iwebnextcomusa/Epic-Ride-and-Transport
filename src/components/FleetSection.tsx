@@ -110,14 +110,14 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
   return (
     <div id="epic-ride-fleet-view" className="relative bg-slate-950 text-white px-4 py-16 sm:px-6 lg:px-8">
       {/* Background ambient lighting */}
-      <div className="absolute top-[30%] left-[20%] h-80 w-80 rounded-full bg-amber-500/3 blur-3xl" />
+      <div className="absolute top-[30%] left-[20%] h-80 w-80 rounded-full bg-[#FF6B00]/3 blur-3xl" />
       <div className="absolute bottom-[10%] right-[10%] h-96 w-96 rounded-full bg-blue-500/3 blur-3xl" />
 
       <div className="mx-auto max-w-7xl relative z-10">
         
         {/* Title / Description */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <span className="text-[11px] font-bold tracking-widest text-[#d4af37] uppercase font-mono">
+          <span className="text-[11px] font-bold tracking-widest text-[#FF6B00] uppercase font-mono">
             Texas Vehicle Showcase
           </span>
           <h1 className="font-sans text-4xl font-extrabold tracking-tight uppercase sm:text-6xl text-white">
@@ -133,29 +133,29 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
           {fleet.map((car) => (
             <div
               key={car.id}
-              className="rounded-2xl border border-white/5 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 flex flex-col justify-between hover:border-amber-400/20 shadow-lg tracking-wide transition-all duration-300 group"
+              className="rounded-2xl border border-white/5 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 flex flex-col justify-between hover:border-[#FF6B00]/20 shadow-lg tracking-wide transition-all duration-300 group"
             >
               <div>
                 
                 {/* Visual Icon/Symbol box representing premium renders */}
-                <div className="h-44 w-full rounded-xl bg-slate-950/85 border border-white/5 mb-6 flex flex-col items-center justify-center relative overflow-hidden group-hover:border-amber-400/10 transition-colors">
-                  <div className="absolute inset-0 bg-radial-gradient from-amber-400/5 to-transparent opacity-60" />
-                  <span className="text-7xl select-none filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.15)] transform group-hover:scale-110 transition-transform duration-300">
+                <div className="h-44 w-full rounded-xl bg-slate-950/85 border border-white/5 mb-6 flex flex-col items-center justify-center relative overflow-hidden group-hover:border-[#FF6B00]/10 transition-colors">
+                  <div className="absolute inset-0 bg-radial-gradient from-[#FF6B00]/5 to-transparent opacity-60" />
+                  <span className="text-7xl select-none filter drop-shadow-[0_4px_12px_rgba(255,107,0,0.15)] transform group-hover:scale-110 transition-transform duration-300">
                     {car.imagePlaceholder}
                   </span>
                   
                   {/* Category overlay */}
-                  <span className="absolute bottom-3 left-3 rounded-full bg-slate-900/90 px-3 py-1 text-[9px] font-mono font-semibold uppercase tracking-wider text-amber-400 border border-amber-500/15">
+                  <span className="absolute bottom-3 left-3 rounded-full bg-slate-900/90 px-3 py-1 text-[9px] font-mono font-semibold uppercase tracking-wider text-[#FF6B00] border border-[#FF6B00]/15">
                     {car.category}
                   </span>
                 </div>
-
+ 
                 {/* Name & Pricing Info */}
                 <div className="space-y-1 mb-4">
-                  <h2 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
+                  <h2 className="text-lg font-bold text-white group-hover:text-[#FF6B00] transition-colors">
                     {car.name}
                   </h2>
-                  <p className="text-[11px] font-mono text-[#d4af37] font-semibold uppercase">
+                  <p className="text-[11px] font-mono text-[#FF6B00] font-semibold uppercase">
                     {car.rateInfo}
                   </p>
                 </div>
@@ -163,11 +163,11 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
                 {/* Specifications: passengers & luggages */}
                 <div className="grid grid-cols-2 gap-2 py-3 border-y border-white/5 text-[11px] font-mono leading-relaxed text-slate-400 mb-4">
                   <div className="flex items-center space-x-2">
-                    <Users className="h-3.5 w-3.5 text-amber-400" />
+                    <Users className="h-3.5 w-3.5 text-[#FF6B00]" />
                     <span>{car.capacity}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Briefcase className="h-3.5 w-3.5 text-[#d4af37]" />
+                    <Briefcase className="h-3.5 w-3.5 text-[#FF6B00]" />
                     <span>{car.luggage}</span>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
                   <ul className="space-y-1.5 text-xs text-slate-400">
                     {car.features.map((feature, fIdx) => (
                       <li key={fIdx} className="flex items-center space-x-2">
-                        <Check className="h-3.5 w-3.5 text-amber-400 shrink-0" />
+                        <Check className="h-3.5 w-3.5 text-[#FF6B00] shrink-0" />
                         <span className="truncate">{feature}</span>
                       </li>
                     ))}
@@ -193,7 +193,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
               <div className="pt-6 mt-6 border-t border-white/5">
                 <button
                   onClick={() => handleBookVehicle(car.name)}
-                  className="w-full text-center bg-gradient-to-r from-amber-400/90 to-amber-600/95 hover:from-amber-400 hover:to-amber-500 py-3 rounded text-xs font-bold uppercase tracking-widest text-slate-950 shadow shadow-amber-500/10 transition-transform hover:scale-[1.01]"
+                  className="w-full text-center bg-gradient-to-r from-[#FF6B00]/90 to-orange-700/95 hover:from-orange-500 hover:to-orange-600 py-3 rounded text-xs font-bold uppercase tracking-widest text-slate-950 shadow shadow-orange-500/10 transition-transform hover:scale-[1.01]"
                 >
                   Reserve Vehicle
                 </button>
@@ -205,7 +205,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
 
         {/* Global safety warning note */}
         <div className="mt-16 flex items-center justify-center space-x-3 bg-white/5 border border-white/5 rounded-xl p-5 max-w-2xl mx-auto backdrop-blur-sm">
-          <Shield className="h-5 w-5 text-amber-400 flex-shrink-0 animate-pulse" />
+          <Shield className="h-5 w-5 text-[#FF6B00] flex-shrink-0 animate-pulse" />
           <p className="text-[11px] text-slate-400 font-sans leading-relaxed">
             All models pictured above represent active vehicle classes. Our dispatch assigns actual vehicles of identical or superior specifications based on local municipal schedules.
           </p>

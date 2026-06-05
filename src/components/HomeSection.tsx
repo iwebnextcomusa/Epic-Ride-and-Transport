@@ -106,22 +106,22 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
 
   const valueProps = [
     {
-      icon: <ShieldCheck className="h-6 w-6 text-amber-400" />,
+      icon: <ShieldCheck className="h-6 w-6 text-[#FF6B00]" />,
       title: "Licensed & Fully Insured",
       desc: "Our vehicles adhere to the highest standard of safety protocols and Texas carrier certifications.",
     },
     {
-      icon: <Clock className="h-6 w-6 text-amber-400" />,
+      icon: <Clock className="h-6 w-6 text-[#FF6B00]" />,
       title: "Punctuality Guaranteed",
       desc: "We track traffic patterns and airport terminal gates live so we are always parked 15 minutes early.",
     },
     {
-      icon: <Users className="h-6 w-6 text-amber-400" />,
+      icon: <Users className="h-6 w-6 text-[#FF6B00]" />,
       title: "Professional Chauffeurs",
       desc: "Background-checked, polite, and uniformed specialists with years of safe navigation in Texas.",
     },
     {
-      icon: <Navigation className="h-6 w-6 text-amber-400" />,
+      icon: <Navigation className="h-6 w-6 text-[#FF6B00]" />,
       title: "Statewide Coverage",
       desc: "Seamless group, corporate, or luxury long-distance transfers safely routing across Texas state lines.",
     },
@@ -157,7 +157,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
       <section className="relative flex min-h-[90vh] flex-col justify-center px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-[#050B18] via-slate-950 to-[#050B18] overflow-hidden">
         
         {/* Subtle glow elements */}
-        <div className="absolute top-[20%] left-[10%] h-72 w-72 rounded-full bg-[#C5A021]/3 blur-3xl pointer-events-none" />
+        <div className="absolute top-[20%] left-[10%] h-72 w-72 rounded-full bg-[#FF6B00]/3 blur-3xl pointer-events-none" />
         <div className="absolute bottom-[20%] right-[10%] h-80 w-80 rounded-full bg-blue-500/3 blur-3xl pointer-events-none" />
 
         <div className="mx-auto max-w-7xl relative z-10 w-full">
@@ -165,7 +165,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
             
             {/* Left Column: Minimized, ultra-elegant text */}
             <div className="lg:col-span-6 space-y-6">
-              <div className="inline-block px-3 py-1 border border-[#C5A021] text-[#C5A021] text-[10px] font-bold uppercase tracking-[0.3em] font-mono">
+              <div className="inline-block px-3 py-1 border border-[#FF6B00] text-[#FF6B00] text-[10px] font-bold uppercase tracking-[0.3em] font-mono">
                 Texas Premier Chauffeurs
               </div>
 
@@ -173,12 +173,11 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                 Reliable <br />
                 <span className="text-transparent text-outline-white">
                   Transport
-                </span> <br />
-                Across Texas
+                </span>
               </h1>
 
               <p className="font-sans text-sm text-slate-300 leading-relaxed max-w-md">
-                Premium local taxi, luxury limousine rentals, and group charter buses tailored for every journey. Discover Texas-sized comfort on your schedule.
+                Premium local taxi, rentals, and group charter buses tailored for every journey. Discover Texas-sized comfort on your schedule.
               </p>
 
               {/* Home CTA buttons */}
@@ -188,13 +187,13 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                     setActiveTab("services");
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="inline-flex items-center justify-center rounded-sm border border-white/20 bg-white/5 hover:bg-[#C5A021]/10 hover:border-[#C5A021]/30 hover:text-[#C5A021] px-6 py-3.5 text-xs font-bold text-white uppercase tracking-[0.15em] transition-all"
+                  className="inline-flex items-center justify-center rounded-sm border border-white/20 bg-white/5 hover:bg-[#FF6B00]/10 hover:border-[#FF6B00]/30 hover:text-[#FF6B00] px-6 py-3.5 text-xs font-bold text-white uppercase tracking-[0.15em] transition-all"
                 >
                   Explore Fleet
                 </button>
                 <a
                   href="tel:4099510839"
-                  className="inline-flex items-center justify-center rounded-sm border border-[#C5A021]/30 bg-[#C5A021]/10 px-6 py-3.5 text-xs font-bold text-[#C5A021] uppercase tracking-[0.15em] font-mono hover:bg-[#C5A021]/20 transition-all"
+                  className="inline-flex items-center justify-center rounded-sm border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-6 py-3.5 text-xs font-bold text-[#FF6B00] uppercase tracking-[0.15em] font-mono hover:bg-[#FF6B00]/20 transition-all"
                 >
                   <Phone className="h-3.5 w-3.5 mr-2" />
                   (409) 951-0839
@@ -204,15 +203,15 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
               {/* Stats row embedded directly in Hero following details from reference HTML */}
               <div className="flex gap-10 mt-6 pt-6 border-t border-white/10 flex-wrap">
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-[#C5A021] font-mono">24h</span>
-                  <span className="text-[9px] uppercase tracking-widest text-[#C5A021] font-mono font-bold">Dispatch Center</span>
+                  <span className="text-2xl font-bold text-[#FF6B00] font-mono">24h</span>
+                  <span className="text-[9px] uppercase tracking-widest text-[#FF6B00] font-mono font-bold">Dispatch Center</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-[#C5A021] font-mono">100%</span>
+                  <span className="text-2xl font-bold text-[#FF6B00] font-mono">100%</span>
                   <span className="text-[9px] uppercase tracking-widest text-gray-500 font-mono">Safety Record</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-[#C5A021] font-mono">50+</span>
+                  <span className="text-2xl font-bold text-[#FF6B00] font-mono">50+</span>
                   <span className="text-[9px] uppercase tracking-widest text-gray-500 font-mono">Active Vehicles</span>
                 </div>
               </div>
@@ -224,7 +223,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                 
                 {/* Secure Seal Banner header */}
                 <div className="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
-                  <span className="text-[10px] font-bold tracking-[0.2em] text-[#C5A021] uppercase font-mono flex items-center">
+                  <span className="text-[10px] font-bold tracking-[0.2em] text-[#FF6B00] uppercase font-mono flex items-center">
                     <ShieldCheck className="h-4 w-4 mr-1.5 text-emerald-400" />
                     Secure Dispatch Gate
                   </span>
@@ -261,7 +260,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                       </div>
                       <div className="flex justify-between">
                         <span>TRACKING ID:</span>
-                        <span className="font-bold text-[#C5A021]">{bookingResult.referenceId}</span>
+                        <span className="font-bold text-[#FF6B00]">{bookingResult.referenceId}</span>
                       </div>
                       <div className="flex justify-between">
                         <span>EST COST MIN:</span>
@@ -282,7 +281,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
 
                     <button
                       onClick={() => setBookingResult(null)}
-                      className="w-full py-2.5 rounded-sm bg-[#C5A021] text-[#050B18] font-bold uppercase tracking-widest text-[10px] transition-colors hover:bg-amber-400"
+                      className="w-full py-2.5 rounded-sm bg-[#FF6B00] text-[#050B18] font-bold uppercase tracking-widest text-[10px] transition-colors hover:bg-orange-500"
                     >
                       Book Another Request
                     </button>
@@ -306,7 +305,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             onChange={handleInputChange}
                             required
                             placeholder="IAH Airport, Hotel, Address..."
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white placeholder-slate-600 focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white placeholder-slate-600 focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
@@ -324,7 +323,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             onChange={handleInputChange}
                             required
                             placeholder="Destination Address..."
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white placeholder-slate-600 focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white placeholder-slate-600 focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
@@ -344,7 +343,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             value={formData.date}
                             onChange={handleInputChange}
                             required
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white font-mono uppercase focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white font-mono uppercase focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
@@ -361,7 +360,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             value={formData.time}
                             onChange={handleInputChange}
                             required
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white font-mono focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-3 text-[11px] text-white font-mono focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
@@ -370,33 +369,33 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                     {/* Class & Riders Rows */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                       <div>
-                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono">
+                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-sans font-semibold">
                           Vehicle Service Class
                         </label>
                         <select
                           name="vehicleType"
                           value={formData.vehicleType}
                           onChange={handleInputChange}
-                          className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 px-2.5 text-[11px] text-white focus:border-[#C5A021] focus:outline-none"
+                          className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 px-2.5 text-[11px] text-white focus:border-[#FF6B00] focus:outline-none"
                         >
                           <option value="Standard Taxi Sedans">Standard Taxi (1-4 riders)</option>
                           <option value="Luxury SUVs">Luxury SUV (1-6 riders)</option>
                           <option value="Stretch Limousines">Stretch Limo (up to 10 riders)</option>
                           <option value="Executive Vehicles">Executive Class Sprinter (up to 14)</option>
-                          <option value="Mini Buses">Mini Bus Charter (up up 28)</option>
-                          <option value="Charter Buses">Heavy Charter Coach (up up 56)</option>
+                          <option value="Mini Buses">Mini Bus Charter (up to 28)</option>
+                          <option value="Charter Buses">Heavy Charter Coach (up to 56)</option>
                         </select>
                       </div>
 
                       <div>
-                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-sans">
+                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-sans font-semibold">
                           Passengers count
                         </label>
                         <select
                           name="passengers"
                           value={formData.passengers}
                           onChange={handleInputChange}
-                          className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 px-2.5 text-[11px] text-white font-mono focus:border-[#C5A021] focus:outline-none"
+                          className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 px-2.5 text-[11px] text-white font-mono focus:border-[#FF6B00] focus:outline-none"
                         >
                           {[...Array(56)].map((_, i) => (
                             <option key={i + 1} value={i + 1}>
@@ -410,7 +409,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                     {/* Guest Detail parameters */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 border-t border-white/5 pt-3">
                       <div>
-                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono">
+                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-semibold">
                           Legal Name
                         </label>
                         <div className="relative">
@@ -422,13 +421,13 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             onChange={handleInputChange}
                             required
                             placeholder="John Doe"
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-2 text-[11px] text-white placeholder-slate-600 focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-2 text-[11px] text-white placeholder-slate-600 focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-sans">
+                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-sans font-semibold">
                           Email Address
                         </label>
                         <div className="relative">
@@ -440,13 +439,13 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             onChange={handleInputChange}
                             required
                             placeholder="guest@domain.com"
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-2 text-[11px] text-white placeholder-slate-600 focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-2 text-[11px] text-white placeholder-slate-600 focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono">
+                        <label className="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-1 font-mono font-semibold">
                           Mobile (Sms alert)
                         </label>
                         <div className="relative">
@@ -458,7 +457,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                             onChange={handleInputChange}
                             required
                             placeholder="(409) 951..."
-                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-2 text-[11px] text-white font-mono placeholder-slate-600 focus:border-[#C5A021] focus:outline-none"
+                            className="w-full rounded-sm border border-white/10 bg-[#050B18] py-2 pl-8 pr-2 text-[11px] text-white font-mono placeholder-slate-600 focus:border-[#FF6B00] focus:outline-none"
                           />
                         </div>
                       </div>
@@ -468,7 +467,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className="w-full mt-3 py-3 rounded-sm bg-[#C5A021] text-[#050B18] font-bold uppercase tracking-widest text-[11px] transition-all hover:bg-amber-400 active:translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full mt-3 py-3 rounded-sm bg-[#FF6B00] text-[#050B18] font-bold uppercase tracking-widest text-[11px] transition-all hover:bg-orange-500 active:translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isLoading ? "Staging Active Booking..." : "Submit Quick Ride Request"}
                     </button>
@@ -489,10 +488,10 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {trustStats.map((stat, idx) => (
               <div key={idx} className="text-center md:text-left border-l border-white/10 pl-4 first:border-l-0">
-                <div className="text-2xl sm:text-4xl font-extrabold text-[#C5A021] font-mono tracking-wider">
+                <div className="text-2xl sm:text-4xl font-extrabold text-[#FF6B00] font-mono tracking-wider">
                   {stat.value}
                 </div>
-                <div className="text-[10px] sm:text-xs font-bold tracking-widest text-[#C5A021] uppercase mt-1 font-mono">
+                <div className="text-[10px] sm:text-xs font-bold tracking-widest text-[#FF6B00] uppercase mt-1 font-mono">
                   {stat.label}
                 </div>
               </div>
@@ -503,11 +502,11 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
 
       {/* 3. Value Propositions: Why Choose Us */}
       <section className="bg-[#0A192F]/20 px-4 py-24 sm:px-6 lg:px-8 relative overflow-hidden border-b border-white/10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-[#C5A021]/3 blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-[#FF6B00]/3 blur-3xl pointer-events-none" />
         
         <div className="mx-auto max-w-7xl">
           <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
-            <h2 className="text-[10px] font-bold tracking-[0.25em] text-[#C5A021] uppercase font-mono">
+            <h2 className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
               Texas Reliability Standard
             </h2>
             <h3 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
@@ -522,9 +521,9 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
             {valueProps.map((prop, idx) => (
               <div
                 key={idx}
-                className="relative rounded-sm border border-white/10 bg-[#0A192F]/40 p-6 backdrop-blur-sm shadow-xl hover:border-[#C5A021]/40 transition-all duration-300 group"
+                className="relative rounded-sm border border-white/10 bg-[#0A192F]/40 p-6 backdrop-blur-sm shadow-xl hover:border-[#FF6B00]/40 transition-all duration-300 group"
               >
-                <div className="mb-4 inline-flex rounded-sm bg-[#C5A021]/10 p-3 border border-[#C5A021]/20 text-[#C5A021]">
+                <div className="mb-4 inline-flex rounded-sm bg-[#FF6B00]/10 p-3 border border-[#FF6B00]/20 text-[#FF6B00]">
                   {prop.icon}
                 </div>
                 <h4 className="text-base font-extrabold text-white tracking-widest uppercase mb-2">
@@ -544,7 +543,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-4">
             <div className="space-y-3">
-              <span className="text-[10px] font-bold tracking-[0.25em] text-[#C5A021] uppercase font-mono">
+              <span className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
                 Featured Offerings
               </span>
               <h2 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
@@ -556,7 +555,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                 setActiveTab("services");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-widest text-[#C5A021] border-b border-[#C5A021]/30 pb-1 hover:text-amber-400 transition-colors"
+              className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-widest text-[#FF6B00] border-b border-[#FF6B00]/30 pb-1 hover:text-orange-400 transition-colors"
             >
               <span>View All Services</span>
               <ChevronRight className="h-4 w-4" />
@@ -567,19 +566,19 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="rounded-sm border border-white/10 bg-[#0A192F]/20 p-6 hover:border-[#C5A021]/40 transition-all duration-300 flex flex-col justify-between group"
+                className="rounded-sm border border-white/10 bg-[#0A192F]/20 p-6 hover:border-[#FF6B00]/40 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-[10px] font-mono tracking-widest text-slate-500 uppercase">
                       {item.category}
                     </span>
-                    <span className="rounded-sm bg-[#C5A021]/15 px-2 py-0.5 border border-[#C5A021]/20 text-[9px] font-mono text-[#C5A021] font-bold uppercase tracking-wider">
+                    <span className="rounded-sm bg-[#FF6B00]/15 px-2 py-0.5 border border-[#FF6B00]/20 text-[9px] font-mono text-[#FF6B00] font-bold uppercase tracking-wider">
                       {item.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-white uppercase tracking-wider mb-2 group-hover:text-[#C5A021] transition-colors font-sans">
+                  <h3 className="text-lg font-bold text-white uppercase tracking-wider mb-2 group-hover:text-[#FF6B00] transition-colors font-sans">
                     {item.title}
                   </h3>
                   <p className="text-xs text-gray-400 leading-relaxed mb-4 font-sans">
@@ -589,7 +588,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
 
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono">
                   <span className="text-slate-500 uppercase">Capacity:</span>
-                  <span className="font-bold text-[#C5A021]">{item.capacity}</span>
+                  <span className="font-bold text-[#FF6B00]">{item.capacity}</span>
                 </div>
               </div>
             ))}
@@ -604,11 +603,11 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
             
             {/* Visual simulation representation of Texas */}
             <div className="relative flex justify-center bg-[#0A192F]/40 border border-white/10 rounded-sm p-8 backdrop-blur-sm min-h-[340px]">
-              <div className="absolute inset-0 bg-radial-gradient from-[#C5A021]/5 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-radial-gradient from-[#FF6B00]/5 to-transparent pointer-events-none" />
               
               <div className="flex flex-col justify-between w-full relative z-10 space-y-6">
                 <div>
-                  <div className="flex items-center space-x-2 text-[10px] font-mono tracking-widest text-[#C5A021] uppercase font-bold">
+                  <div className="flex items-center space-x-2 text-[10px] font-mono tracking-widest text-[#FF6B00] uppercase font-bold">
                     <MapPin className="h-4 w-4" />
                     <span>Texas State Coverage Map</span>
                   </div>
@@ -621,19 +620,19 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-mono">
                   <div className="bg-white/5 border border-white/10 rounded-sm p-3">
                     <div className="text-slate-500 uppercase text-[9px] tracking-widest font-bold">Houston Metro</div>
-                    <div className="text-[#C5A021] font-bold mt-1">IAH &amp; HOU</div>
+                    <div className="text-[#FF6B00] font-bold mt-1">IAH &amp; HOU</div>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-sm p-3">
                     <div className="text-slate-500 uppercase text-[9px] tracking-widest font-bold">Dallas Fort Worth</div>
-                    <div className="text-[#C5A021] font-bold mt-1">DFW &amp; DAL</div>
+                    <div className="text-[#FF6B00] font-bold mt-1">DFW &amp; DAL</div>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-sm p-3">
                     <div className="text-slate-500 uppercase text-[9px] tracking-widest font-bold">Central Texas</div>
-                    <div className="text-[#C5A021] font-bold mt-1">AUS &amp; SAT</div>
+                    <div className="text-[#FF6B00] font-bold mt-1">AUS &amp; SAT</div>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-sm p-3 col-span-2 sm:col-span-3">
                     <div className="text-slate-500 uppercase text-[9px] tracking-widest font-bold">Coastal &amp; East Texas</div>
-                    <div className="text-[#C5A021] font-bold mt-1">Beaumont, Port Arthur, Galveston</div>
+                    <div className="text-[#FF6B00] font-bold mt-1">Beaumont, Port Arthur, Galveston</div>
                   </div>
                 </div>
 
@@ -645,7 +644,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
 
             {/* Service Area Content */}
             <div className="space-y-6">
-              <span className="text-[10px] font-bold tracking-[0.25em] text-[#C5A021] uppercase font-mono">
+              <span className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
                 Our Territory
               </span>
               <h3 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
@@ -657,15 +656,15 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
               
               <ul className="space-y-3.5 text-xs text-gray-400">
                 <li className="flex items-center space-x-3">
-                  <CheckCircle className="h-4.5 w-4.5 text-[#C5A021] flex-shrink-0" />
+                  <CheckCircle className="h-4.5 w-4.5 text-[#FF6B00] flex-shrink-0" />
                   <span>Curbside meet &amp; greet or baggage claims pickup at IAH, HOU, and DFW.</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <CheckCircle className="h-4.5 w-4.5 text-[#C5A021] flex-shrink-0" />
+                  <CheckCircle className="h-4.5 w-4.5 text-[#FF6B00] flex-shrink-0" />
                   <span>Point-to-point flat rates for regional centers and corporate corridors.</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <CheckCircle className="h-4.5 w-4.5 text-[#C5A021] flex-shrink-0" />
+                  <CheckCircle className="h-4.5 w-4.5 text-[#FF6B00] flex-shrink-0" />
                   <span>Door-to-door absolute tracking privacy with secure executive protocols.</span>
                 </li>
               </ul>
@@ -673,7 +672,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
               <div className="pt-4">
                 <a
                   href="tel:4099510839"
-                  className="inline-flex items-center space-x-2 rounded-sm bg-[#C5A021]/10 hover:bg-[#C5A021]/20 px-5 py-3 border border-[#C5A021]/30 text-xs font-bold uppercase tracking-wider text-[#C5A021] font-mono"
+                  className="inline-flex items-center space-x-2 rounded-sm bg-[#FF6B00]/10 hover:bg-[#FF6B00]/20 px-5 py-3 border border-[#FF6B00]/30 text-xs font-bold uppercase tracking-wider text-[#FF6B00] font-mono"
                 >
                   <Phone className="h-4 w-4" />
                   <span>Call Dispatcher: (409) 951-0839</span>
@@ -686,7 +685,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
       </section>
 
       {/* 6. Contact and Booking banner */}
-      <section className="bg-gradient-to-r from-[#C5A021] to-[#9b7c15] px-4 py-20 text-slate-950 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#FF6B00] to-orange-800 px-4 py-20 text-slate-950 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.12),transparent)] pointer-events-none" />
         <div className="mx-auto max-w-5xl text-center space-y-6 relative z-10">
           <h2 className="text-[10px] font-bold tracking-[0.25em] text-slate-900 uppercase font-mono">
