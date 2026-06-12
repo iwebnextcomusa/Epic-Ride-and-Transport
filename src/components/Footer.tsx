@@ -1,5 +1,6 @@
 import { TabType } from "../types";
 import { Phone, Mail, MapPin, Car, Shield, CircleHelp } from "lucide-react";
+import { Logo } from "./Logo";
 
 interface FooterProps {
   setActiveTab: (tab: TabType) => void;
@@ -22,24 +23,14 @@ export default function Footer({ setActiveTab }: FooterProps) {
           {/* Brand Info Column */}
           <div className="col-span-1 space-y-4">
             <div 
-              className="flex cursor-pointer items-center space-x-3 text-[#FF6B00]" 
+              className="flex cursor-pointer items-center transition-opacity hover:opacity-95" 
               onClick={() => handleNavClick("home")}
             >
-              <div className="w-10 h-10 bg-[#FF6B00] flex items-center justify-center rounded-sm shadow-md">
-                <span className="text-[#050B18] font-black text-xl">ER</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-sans text-base font-extrabold tracking-tighter text-white uppercase">
-                  Epic Ride
-                </span>
-                <span className="text-[10px] font-bold tracking-widest text-[#FF6B00] uppercase font-mono">
-                  &amp; Transport
-                </span>
-              </div>
+              <Logo className="h-12" />
             </div>
             
             <p className="text-xs text-gray-400 leading-relaxed max-w-xs">
-              Texas premium limousine rentals, taxi rides, airport transfers, and private charter bus connections. Reliable. Safe. Elegant.
+              Texas premium Casino Trips, taxi rides, airport transfers, and private charter bus connections. Reliable. Safe. Elegant.
             </p>
             
             <div className="flex items-center space-x-2 text-[10px] text-slate-500 font-mono">
@@ -95,7 +86,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
               </li>
               <li>
                 <button onClick={() => handleNavClick("services")} className="hover:text-white transition-colors">
-                  Luxury Limousine Rentals
+                  Casino Trips (Texas & Louisiana)
                 </button>
               </li>
               <li>

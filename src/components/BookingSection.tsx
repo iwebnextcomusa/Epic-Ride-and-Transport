@@ -29,8 +29,8 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
       setFormData(prev => ({ ...prev, vehicleType: selectedVehiclePreset }));
     } else if (selectedServicePreset) {
       // map service to vehicle counterpart
-      if (selectedServicePreset.includes("Limo")) {
-        setFormData(prev => ({ ...prev, vehicleType: "Stretch Limousines" }));
+      if (selectedServicePreset.includes("Limo") || selectedServicePreset.includes("Casino")) {
+        setFormData(prev => ({ ...prev, vehicleType: "Casino Trips from Texas to Louisiana" }));
       } else if (selectedServicePreset.includes("Charter")) {
         setFormData(prev => ({ ...prev, vehicleType: "Charter Buses" }));
       } else if (selectedServicePreset.includes("Taxi")) {
@@ -58,7 +58,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
       case "Luxury SUVs":
         cost = 150; // standard flat/2hr minimum
         break;
-      case "Stretch Limousines":
+      case "Casino Trips from Texas to Louisiana":
         cost = 360; // standard 3h min
         break;
       case "Executive Vehicles":
@@ -354,7 +354,7 @@ export default function BookingSection({ selectedServicePreset = "", selectedVeh
                     >
                       <option value="Standard Taxi Sedans">Standard Taxi Sedans (1-4 Passengers)</option>
                       <option value="Luxury SUVs">Luxury SUVs (1-6 Passengers)</option>
-                      <option value="Stretch Limousines">Stretch Limousines (up to 10 Passengers)</option>
+                      <option value="Casino Trips from Texas to Louisiana">Casino Trips from Texas to Louisiana (up to 10 Passengers)</option>
                       <option value="Executive Vehicles">Executive Vehicles / Sprinters (up to 14 Passengers)</option>
                       <option value="Mini Buses">Mini Buses (up to 28 Passengers)</option>
                       <option value="Charter Buses">Charter Buses (up to 56 Passengers)</option>

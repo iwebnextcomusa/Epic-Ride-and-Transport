@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TabType } from "../types";
 import { Phone, Menu, X, Car } from "lucide-react";
+import { Logo } from "./Logo";
 
 interface NavBarProps {
   activeTab: TabType;
@@ -38,19 +39,9 @@ export default function NavBar({ activeTab, setActiveTab, onOpenBooking }: NavBa
           {/* Logo Brand styling */}
           <div 
             onClick={() => handleNavClick("home")}
-            className="flex cursor-pointer items-center space-x-3 text-[#FF6B00]"
+            className="flex cursor-pointer items-center transition-opacity hover:opacity-95"
           >
-            <div className="w-10 h-10 bg-[#FF6B00] flex items-center justify-center rounded-sm shadow-md">
-              <span className="text-[#050B18] font-black text-xl">ER</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-sans text-lg font-extrabold tracking-tighter text-white uppercase sm:text-xl">
-                Epic Ride
-              </span>
-              <span className="text-[10px] font-bold tracking-widest text-[#FF6B00] uppercase font-mono">
-                &amp; Transport
-              </span>
-            </div>
+            <Logo className="h-12" />
           </div>
 
           {/* Desktop Navigation */}

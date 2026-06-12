@@ -14,8 +14,8 @@ export default function TestimonialsSection({ setActiveTab }: TestimonialsSectio
       name: "Marcus Sterling",
       location: "Houston, TX",
       rating: 5,
-      serviceType: "Luxury Limousine Rental",
-      comment: "Absolutely exceptional service from Epic Ride! The stretch limo for our wedding was spotless, and our driver was the epitome of professional poise. The team had champagne on ice and made our departures perfectly coordinated. Truly premium.",
+      serviceType: "Texas to Louisiana Casino Trip",
+      comment: "Absolutely exceptional service from Epic Ride! The round-trip transit to Lake Charles for our group gaming escape was spotless, comfortable, and perfectly timed. Our chauffeur handled the interstate drive with epitome of professional poise. Truly premium.",
       date: "May 14, 2026"
     },
     {

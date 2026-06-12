@@ -136,11 +136,11 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
       badge: "Fast & Convenient",
     },
     {
-      title: "Stretch Limousines",
-      category: "Luxury Services",
-      desc: "Premium chauffeured transport with pristine glass bar service.",
+      title: "Casino Trips from Texas to Louisiana",
+      category: "Gaming & Interstate Tours",
+      desc: "Premium round-trip transportation to top casino destinations.",
       capacity: "Up to 10 Passengers",
-      badge: "Top Tier Elegance",
+      badge: "Lake Charles & Shreveport",
     },
     {
       title: "Charter & Mini Buses",
@@ -169,7 +169,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                 Texas Premier Chauffeurs
               </div>
 
-              <h1 className="font-sans text-4xl font-extrabold leading-[1.0] tracking-tighter text-white uppercase sm:text-5xl md:text-6xl">
+              <h1 className="font-display text-4xl font-extrabold leading-[1.0] tracking-tighter text-white uppercase sm:text-5xl md:text-6xl">
                 Reliable <br />
                 <span className="text-transparent text-outline-white">
                   Transport
@@ -380,7 +380,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
                         >
                           <option value="Standard Taxi Sedans">Standard Taxi (1-4 riders)</option>
                           <option value="Luxury SUVs">Luxury SUV (1-6 riders)</option>
-                          <option value="Stretch Limousines">Stretch Limo (up to 10 riders)</option>
+                          <option value="Casino Trips from Texas to Louisiana">Casino Trips (Texas to Louisiana)</option>
                           <option value="Executive Vehicles">Executive Class Sprinter (up to 14)</option>
                           <option value="Mini Buses">Mini Bus Charter (up to 28)</option>
                           <option value="Charter Buses">Heavy Charter Coach (up to 56)</option>
@@ -509,7 +509,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
             <h2 className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
               Texas Reliability Standard
             </h2>
-            <h3 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
+            <h3 className="font-display text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
               Why Executive Travelers Choose Us
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md mx-auto">
@@ -546,7 +546,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
               <span className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
                 Featured Offerings
               </span>
-              <h2 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
+              <h2 className="font-display text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
                 Our Fleet Segments
               </h2>
             </div>
@@ -647,7 +647,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
               <span className="text-[10px] font-bold tracking-[0.25em] text-[#FF6B00] uppercase font-mono">
                 Our Territory
               </span>
-              <h3 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
+              <h3 className="font-display text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-white">
                 Reliable Long-Distance &amp; Metro Transfers
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed font-sans">
@@ -691,11 +691,11 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
           <h2 className="text-[10px] font-bold tracking-[0.25em] text-slate-900 uppercase font-mono">
             Get an instant ride request now
           </h2>
-          <h3 className="font-sans text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-slate-950">
+          <h3 className="font-display text-3xl font-extrabold tracking-tight uppercase sm:text-5xl text-slate-950">
             Need Premium Group Transit in Texas?
           </h3>
           <p className="text-slate-950 text-sm sm:text-base font-sans max-w-2xl mx-auto font-medium leading-relaxed">
-            Book taxis, luxury limo rentals, or executive coaches in under 3 minutes. Receive instant estimates and dependable Texas transport notifications.
+            Book taxis, Casino Trips from Texas to Louisiana, or executive coaches in under 3 minutes. Receive instant estimates and dependable regional transport notifications.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button

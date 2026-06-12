@@ -40,19 +40,19 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
       imagePlaceholder: "🚙"
     },
     {
-      id: "stretch-limo",
-      name: "Stretch Limousines",
-      category: "VIP & Special Occasions",
+      id: "casino-trips",
+      name: "Casino Trips from Texas to Louisiana",
+      category: "Gaming & Interstate Tours",
       capacity: "1-10 Passengers",
       luggage: "4 Bagages",
       features: [
-        "Fiber optic neon light roof",
-        "Tinted privacy divider",
-        "Pristine crystal glassware bar",
-        "Premium Bluetooth stereos"
+        "Direct luxury round-trip transfers",
+        "Servicing Lake Charles & Shreveport",
+        "Complimentary beverages & snacks",
+        "Customizable departure schedule"
       ],
       rateInfo: "Rates start at $120/hour (3hr min)",
-      imagePlaceholder: "🥂"
+      imagePlaceholder: "🎰"
     },
     {
       id: "executive-van",

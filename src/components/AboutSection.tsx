@@ -16,7 +16,7 @@ export default function AboutSection({ setActiveTab }: AboutSectionProps) {
     {
       icon: <Sparkles className="h-6 w-6 text-[#FF6B00]" />,
       title: "Meticulous Fleet Hygiene",
-      desc: "Our vehicles undergo strict interior scrubbing and visual alignment detail inspections daily. Your limousine, sedan, or heavy coach will always arrive in showroom condition.",
+      desc: "Our vehicles undergo strict interior scrubbing and visual alignment detail inspections daily. Your selected sedan, coach, or regional shuttle will always arrive in showroom condition.",
     },
     {
       icon: <HeartHandshake className="h-6 w-6 text-[#FF6B00]" />,
@@ -40,7 +40,7 @@ export default function AboutSection({ setActiveTab }: AboutSectionProps) {
             Driven by Professional <span className="text-transparent text-outline-orange">Integrity</span>
           </h1>
           <p className="text-gray-400 text-sm leading-relaxed sm:text-base font-sans">
-            Headquartered in Texas, USA, Epic Ride and Transport LLC provides dependable private taxi, luxury limo, and premium coach travel experiences designed for elite passengers.
+            Headquartered in Texas, USA, Epic Ride and Transport LLC provides dependable private taxi, Casino Trips from Texas to Louisiana, and premium coach travel experiences designed for elite passengers.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function AboutSection({ setActiveTab }: AboutSectionProps) {
               Founded on the belief that transportation should be seamless, reliable, and premium, Epic Ride and Transport LLC has evolved into a premier luxury carrier across Texas, USA.
             </p>
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed font-sans">
-              Recognizing that each passenger possesses unique coordinates and comfort requirements, we tailored our operational tiers: from rapid, convenient municipal taxi bookings to bespoke stretch limos and massive heavy charter coaches. We remove the chaos of regional airport transfers and metropolitan navigation, allowing you to settle in and enjoy the ride.
+              Recognizing that each passenger possesses unique coordinates and comfort requirements, we tailored our operational tiers: from rapid, convenient municipal taxi bookings to bespoke Casino Trips from Texas to Louisiana and massive heavy charter coaches. We remove the chaos of regional airport transfers and metropolitan navigation, allowing you to settle in and enjoy the ride.
             </p>
             <div className="pt-2">
               <button

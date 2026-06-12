@@ -37,21 +37,21 @@ export default function ServicesSection({ setActiveTab, onSelectService }: Servi
       ]
     },
     {
-      id: "limo",
-      name: "Limousine Rentals",
+      id: "casino-trips",
+      name: "Casino Trips from Texas to Louisiana",
       icon: <Sparkles className="h-8 w-8 text-[#FF6B00]" />,
-      description: "Luxury stretch limousine rentals and executive SUV services designed to make a statement in style, featuring leather comfort, premium temperature controls, and champagne bar capabilities.",
+      description: "Premium round-trip transportation to Louisiana's finest gaming hotels and casino resorts. Settle into luxurious comfort with onboard amenities while our professional driver navigates the interstate routes.",
       benefits: [
-        "Unparalleled privacy partitions & tinted viewing",
-        "Pristine internal state with state-of-the-art acoustics",
-        "Professional suited chauffeur at your exclusive beck & call",
-        "Perfect photo staging opportunities with immaculate vehicle trim"
+        "Direct luxury transfers from any Texas starting coordinate",
+        "Custom round-trip routing to Lake Charles and Shreveport",
+        "Complimentary chilled water, refreshments, and storage space",
+        "Flexible scheduled return pickups on your timeline"
       ],
       occasions: [
-        "Highschool Proms", 
-        "Grand Weddings", 
-        "VIP Executive Arrivals", 
-        "Romantic Anniversary dinners"
+        "Weekend Gaming Escapes", 
+        "VIP High-Roller Excursions", 
+        "Bachelor & Birthday Celebrations", 
+        "Corporate Group Outings"
       ]
     },
     {
@@ -151,7 +151,7 @@ export default function ServicesSection({ setActiveTab, onSelectService }: Servi
             Our Transportation Capabilities
           </h1>
           <p className="text-slate-300 text-sm leading-relaxed sm:text-base font-sans">
-            We provide a diverse portfolio of luxury limos, rapid taxis, and high-capacity charter coaches customized for business power-trips, grand weddings, and group travels.
+            We provide a diverse portfolio of casino trips, rapid taxis, and high-capacity charter coaches customized for business power-trips, gaming escapes, and group travels.
           </p>
         </div>
 

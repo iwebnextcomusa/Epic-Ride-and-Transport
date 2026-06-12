@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <!-- Rich gold-to-orange metallic gradient -->
+    <linearGradient id="favGold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#DF7B00" />
+      <stop offset="50%" stopColor="#FFE082" />
+      <stop offset="100%" stopColor="#FF6B00" />
+    </linearGradient>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0B1329" />
+      <stop offset="100%" stopColor="#020617" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Navy Rounded Base Container for high contrast visibility on tab bars -->
+  <rect width="32" height="32" rx="8" fill="url(#favBg)"/>
+  <rect width="30" height="30" x="1" y="1" rx="7" stroke="url(#favGold)" stroke-width="1.2" opacity="0.35" />
+
+  <!-- Swept-back Wings -->
+  <g>
+    <path d="M 4 12 C 8 14, 15 15, 19 17 C 15 16, 8 14, 4 12 Z" fill="url(#favGold)" />
+    <path d="M 3 14 C 9 17, 16 16, 21 19 C 15 17, 9 15, 3 14 Z" fill="url(#favGold)" />
+    <path d="M 5 17 C 10 20, 16 19, 21 21 C 16 20, 10 18, 5 17 Z" fill="url(#favGold)" />
+  </g>
+
+  <!-- Sleek Luxury Car Outline -->
+  <g>
+    <!-- Roof line and windows -->
+    <path d="M 18 17 C 21 14, 25 14, 28 17 C 29 18, 30 19, 31 22 L 26 22 Z" stroke="url(#favGold)" stroke-width="1" stroke-linejoin="round" fill="#0A192F"/>
+    
+    <!-- Body line and bumper -->
+    <path d="M 16 22 C 22 21.5, 23 21, 28 21 C 30 21, 31 22, 31 24 C 29 25, 20 25, 16 25 Z" fill="#050B18" stroke="url(#favGold)" stroke-width="1" stroke-linejoin="round"/>
+    
+    <!-- Chrome alloy wheels -->
+    <circle cx="21" cy="25" r="2.2" fill="#020617" stroke="url(#favGold)" stroke-width="0.7" />
+    <circle cx="28" cy="25" r="2.2" fill="#020617" stroke="url(#favGold)" stroke-width="0.7" />
+    
+    <!-- Wing highlight speeds underneath -->
+    <path d="M 10 24 L 14 24" stroke="url(#favGold)" stroke-width="0.8" opacity="0.7" stroke-linecap="round"/>
+    <path d="M 11 26 L 13 26" stroke="url(#favGold)" stroke-width="0.6" opacity="0.5" stroke-linecap="round"/>
+  </g>
+</svg>

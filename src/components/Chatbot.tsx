@@ -8,7 +8,7 @@ export default function Chatbot() {
   const [history, setHistory] = useState<ChatHistoryMessage[]>([
     {
       role: "model",
-      content: "Hello! Thank you for choosing Epic Ride and Transport LLC. I am your Texas transit dispatcher assistant. How may I help you secure luxury limousines, taxi rides, or charter bus services today?"
+      content: "Hello! Thank you for choosing Epic Ride and Transport LLC. I am your Texas transit dispatcher assistant. How may I help you secure Casino Trips from Texas to Louisiana, taxi rides, or charter bus services today?"
     }
   ]);
   const [isLoading, setIsLoading] = useState(false);
