@@ -204,8 +204,8 @@ export default function ServicesSection({ setActiveTab, onSelectService }: Servi
                   {/* Suitable Occasions */}
                   <div>
                     <h3 className="text-xs font-bold uppercase tracking-wider text-[#FF6B00] mb-3 flex items-center space-x-1.5 font-mono">
-                      <PartyPopper className="h-3.5 w-3.5" />
-                      <span>Best Occasions</span>
+                      <Briefcase className="h-3.5 w-3.5" />
+                      <span>Primary Use Cases</span>
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {svc.occasions.map((occ, oIdx) => (

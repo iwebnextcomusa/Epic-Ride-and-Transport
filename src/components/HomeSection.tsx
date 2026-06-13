@@ -219,7 +219,7 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
 
             {/* Right Column: Sleek, high-fidelity Quick Booking Form card */}
             <div className="lg:col-span-6 w-full font-sans">
-              <div className="rounded-sm border border-white/10 bg-[#0A192F]/60 p-6 backdrop-blur-md shadow-2xl relative">
+              <div className="rounded-sm border border-[#FF6B00]/30 border-t-2 border-t-[#FF6B00] bg-[#0A192F]/80 p-6 backdrop-blur-md shadow-[0_0_50px_-12px_rgba(255,107,0,0.35)] relative transition-all duration-300 hover:shadow-[0_0_50px_0_rgba(255,107,0,0.25)] hover:border-[#FF6B00]/55">
                 
                 {/* Secure Seal Banner header */}
                 <div className="flex items-center justify-between mb-4 border-b border-white/10 pb-3">

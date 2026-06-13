@@ -8,153 +8,177 @@ interface LogoProps {
 
 export function Logo({ className = "h-11", iconOnly = false, textColor = "text-white" }: LogoProps) {
   return (
-    <div className={`flex items-center space-x-3 select-none ${className}`}>
-      {/* SVG Icon containing the winged luxury car */}
+    <div className={`flex items-center space-x-3.5 select-none ${className}`}>
+      {/* Exquisite SVG representation matching the uploaded 'Epic Ride and Transport' prestige shield logo */}
       <svg
-        viewBox="0 0 160 120"
+        viewBox="0 0 400 320"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-full aspect-square flex-shrink-0"
+        className="h-full aspect-[5/4] flex-shrink-0"
       >
         <defs>
-          {/* Rich metallic premium gold-to-orange gradient matching the uploaded logo */}
-          <linearGradient id="epicGold" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#DF7B00" />
-            <stop offset="30%" stopColor="#FF9F3B" />
-            <stop offset="70%" stopColor="#FFE082" />
-            <stop offset="100%" stopColor="#FF6B00" />
-          </linearGradient>
-          
-          {/* Subtle reflection opacity mask */}
-          <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1E293B" />
-            <stop offset="100%" stopColor="#0B1329" />
+          {/* Majestic Metallic Gold & Bronze Gradients from the corporate asset */}
+          <linearGradient id="shieldGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#C5A059" />
+            <stop offset="30%" stopColor="#F5E2B3" />
+            <stop offset="70%" stopColor="#AD8743" />
+            <stop offset="100%" stopColor="#8F6A2B" />
           </linearGradient>
 
-          <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
-            <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#FF6B00" floodOpacity="0.3" />
+          <linearGradient id="carGoldGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="0%" stopColor="#9E7B45" />
+            <stop offset="25%" stopColor="#E2CD9C" />
+            <stop offset="50%" stopColor="#F3E5C8" />
+            <stop offset="75%" stopColor="#C19E5E" />
+            <stop offset="100%" stopColor="#856123" />
+          </linearGradient>
+
+          <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#8F6A2B" opacity="0.3" />
+            <stop offset="40%" stopColor="#D4BF8F" />
+            <stop offset="70%" stopColor="#F6E7C4" />
+            <stop offset="100%" stopColor="#8F6A2B" />
+          </linearGradient>
+
+          {/* Deep Sapphire Midnight Navy Fill for high-contrast elite branding */}
+          <linearGradient id="shieldNavyFill" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#0B152C" />
+            <stop offset="100%" stopColor="#040814" />
+          </linearGradient>
+
+          {/* Luxury drop shadow to separate the shield layers beautifully */}
+          <filter id="logoDepthShadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="8" stdDeviation="6" floodColor="#000000" floodOpacity="0.6" />
           </filter>
         </defs>
 
-        {/* Dynamic Swept Wing Paths (The golden wings from the uploaded file) */}
-        <g filter="url(#glow)">
-          {/* Wing Upper Feather */}
+        {/* 1. Base Layer: The Prestige Shield */}
+        <g filter="url(#logoDepthShadow)">
+          {/* Outer Gold Boundary Line */}
           <path
-            d="M 12 40 C 25 48, 55 52, 74 61 C 60 55, 30 45, 12 40 Z"
-            fill="url(#epicGold)"
+            d="M 200,45 C 235,40 280,31 315,28 C 322,110 315,190 200,270 C 85,190 78,110 85,28 C 120,31 165,40 200,45 Z"
+            fill="url(#shieldNavyFill)"
+            stroke="url(#shieldGoldGrad)"
+            strokeWidth="3"
+            strokeLinejoin="round"
           />
-          {/* Wing Backsweep Winglet 1 - Top major sweep */}
+          
+          {/* Inner Gold Parallel Inset Accent (Creating the double gold bezel layout seen in user image) */}
           <path
-            d="M 10 44 C 35 56, 68 54, 82 66 C 60 58, 30 48, 10 44 Z"
-            fill="url(#epicGold)"
-          />
-          {/* Wing Backsweep Winglet 2 */}
-          <path
-            d="M 15 52 C 38 64, 71 63, 85 73 C 65 65, 35 55, 15 52 Z"
-            fill="url(#epicGold)"
-          />
-          {/* Wing Backsweep Winglet 3 - Lower tier */}
-          <path
-            d="M 22 61 C 42 71, 71 70, 83 79 C 65 72, 40 63, 22 61 Z"
-            fill="url(#epicGold)"
-          />
-          {/* Wing Backsweep Winglet 4 - Lowermost speed stroke */}
-          <path
-            d="M 32 70 C 48 77, 71 77, 80 84 C 66 79, 46 72, 32 70 Z"
-            fill="url(#epicGold)"
+            d="M 200,58 C 230,53 270,45 299,42 C 304,112 298,180 200,250 C 102,180 96,112 101,42 C 130,45 170,53 200,58 Z"
+            fill="url(#shieldNavyFill)"
+            stroke="url(#shieldGoldGrad)"
+            strokeWidth="1.5"
+            strokeLinejoin="round"
+            opacity="0.85"
           />
         </g>
 
-        {/* Sleek luxury sedan silhouette structure */}
+        {/* 2. Sweeping Corporate Orbit / Highway (Curve starting low left, sweeping past bottom wheels, circling high-right) */}
+        <path
+          d="M 68,162 C 110,185 180,195 240,180 C 295,166 345,130 358,85 L 344,83 C 332,122 288,154 236,167 C 182,180 115,172 75,151 Z"
+          fill="url(#orbitGrad)"
+        />
+        <path
+          d="M 120,172 C 165,183 230,178 285,152"
+          stroke="url(#shieldGoldGrad)"
+          strokeWidth="1.5"
+          opacity="0.75"
+        />
+
+        {/* 3. The Grand Luxury Sedan Car (Superimposed onto the shield structure with metallic golden/bronze highlights) */}
         <g>
-          {/* Car main upper greenhouse dome/roofline */}
+          {/* Dark Windows silhouette group */}
           <path
-            d="M 75 62 C 88 50, 115 50, 130 60 C 135 63, 154 66, 158 75 L 140 75 Z"
-            fill="url(#bodyGrad)"
-            stroke="url(#epicGold)"
-            strokeWidth="1.5"
+            d="M 152,116 C 170,95 240,94 274,114 Z"
+            fill="#050B18"
           />
-          {/* Windows division pillar */}
+          {/* Windows gold framework and inner glint */}
           <path
-            d="M 102 54 L 105 73"
-            stroke="url(#epicGold)"
-            strokeWidth="1.2"
-            strokeLinecap="round"
+            d="M 152,116 C 170,95 240,94 274,114 C 285,123 290,132 291,133 L 140,133 Z"
+            fill="#0B1329"
+            stroke="url(#carGoldGrad)"
+            strokeWidth="1.8"
+            strokeLinejoin="round"
           />
-          {/* Window glint highlights */}
+          {/* Window Chrome Pillar */}
           <path
-            d="M 88 59 C 94 56, 100 55, 101 59 Z"
-            fill="#FFF"
-            opacity="0.25"
+            d="M 215,96 L 219,132"
+            stroke="url(#carGoldGrad)"
+            strokeWidth="1.8"
           />
-          {/* Sedan sleek body line, hood and trunk */}
+          {/* Window Reflection Specular Glint */}
           <path
-            d="M 70 73 C 82 72, 85 71, 95 71 L 146 71 C 154 71, 158 75, 156 80 L 152 83 L 73 83 C 71 80, 68 76, 70 73 Z"
-            fill="url(#bodyGrad)"
-            stroke="url(#epicGold)"
-            strokeWidth="2"
+            d="M 172,112 C 185,103 198,101 205,104 Z"
+            fill="#FFFFFF"
+            opacity="0.3"
           />
-          {/* Rear premium light tail line */}
+
+          {/* Car main metal body panels in rich golds */}
           <path
-            d="M 68 74 L 72 78"
-            stroke="#FF3B30"
-            strokeWidth="1.5"
-            strokeLinecap="round"
+            d="M 103,135 C 122,132 140,128 178,128 L 290,128 C 304,128 316,134 314,146 C 307,152 260,154 200,154 C 135,154 112,151 103,141 C 100,138 101,136 103,135 Z"
+            fill="url(#carGoldGrad)"
+            stroke="#050B18"
+            strokeWidth="0.8"
           />
-          {/* Front headlight luxury beam curve */}
           <path
-            d="M 152 74 C 155 75, 158 77, 156 80"
-            stroke="#FFF"
-            strokeWidth="1.5"
-            strokeLinecap="round"
+            d="M 98,141 Q 120,131 160,132 L 310,132 C 316,135 318,141 315,145 Q 210,165 98,141 Z"
+            fill="url(#carGoldGrad)"
           />
-          {/* Front grille lines (like Mercedes style in the uploaded image) */}
+
+          {/* Front Bumper & Luxury Mercedes-style Grille Contour on Left */}
           <path
-            d="M 148 76 L 151 79 M 145 77 L 147 80"
-            stroke="url(#epicGold)"
+            d="M 98,141 C 94,143 92,148 95,152 C 101,158 118,162 138,162 L 155,162 Z"
+            fill="url(#carGoldGrad)"
+            stroke="url(#shieldGoldGrad)"
             strokeWidth="1"
           />
-
-          {/* Under-carriage dark shadow */}
+          {/* Front Headlight flare */}
           <path
-            d="M 50 85 L 155 85"
-            stroke="#020617"
-            strokeWidth="3.5"
+            d="M 102,140 C 107,141 112,143 115,146"
+            stroke="#FFF"
+            strokeWidth="1.8"
             strokeLinecap="round"
-            opacity="0.8"
           />
 
-          {/* Shiny alloy chrome wheels */}
-          {/* Wheel 1 (Rear) */}
-          <circle cx="84" cy="83" r="10" fill="#020617" stroke="url(#epicGold)" strokeWidth="1.8" />
-          <circle cx="84" cy="83" r="5" fill="url(#epicGold)" />
-          <path d="M 84 73 L 84 93 M 74 83 L 94 83" stroke="#FFF" strokeWidth="0.8" opacity="0.4" />
-          
-          {/* Wheel 2 (Front) */}
-          <circle cx="132" cy="83" r="10" fill="#020617" stroke="url(#epicGold)" strokeWidth="1.8" />
-          <circle cx="132" cy="83" r="5" fill="url(#epicGold)" />
-          <path d="M 132 73 L 132 93 M 122 83 L 142 83" stroke="#FFF" strokeWidth="0.8" opacity="0.4" />
+          {/* Rear premium tail taper on Right */}
+          <path
+            d="M 292,130 C 305,130 315,134 318,140 L 314,148 Z"
+            fill="url(#carGoldGrad)"
+          />
 
-          {/* Golden motion/speed streaks under the wings & under car to ground the asset */}
-          <path d="M 35 79 L 68 79" stroke="url(#epicGold)" strokeWidth="1.5" strokeLinecap="round" opacity="0.8" />
-          <path d="M 45 83 L 64 83" stroke="url(#epicGold)" strokeWidth="1" strokeLinecap="round" opacity="0.6" />
+          {/* Chrome Alloy Wheels with matching center badges */}
+          {/* Wheel 1 (Rear-Right) */}
+          <circle cx="152" cy="155" r="15" fill="#040814" stroke="url(#shieldGoldGrad)" strokeWidth="2.2" />
+          <circle cx="152" cy="155" r="11" fill="#121D3A" stroke="url(#shieldGoldGrad)" strokeWidth="1" />
+          <circle cx="152" cy="155" r="5" fill="url(#shieldGoldGrad)" />
+          {/* Alloy Spokes */}
+          <path d="M 152,140 L 152,170 M 137,155 L 167,155" stroke="url(#shieldGoldGrad)" strokeWidth="0.8" opacity="0.6" />
+
+          {/* Wheel 2 (Front-Left) */}
+          <circle cx="264" cy="155" r="15" fill="#040814" stroke="url(#shieldGoldGrad)" strokeWidth="2.2" />
+          <circle cx="264" cy="155" r="11" fill="#121D3A" stroke="url(#shieldGoldGrad)" strokeWidth="1" />
+          <circle cx="264" cy="155" r="5" fill="url(#shieldGoldGrad)" />
+          {/* Alloy Spokes */}
+          <path d="M 264,140 L 264,170 M 249,155 L 279,155" stroke="url(#shieldGoldGrad)" strokeWidth="0.8" opacity="0.6" />
+
+          {/* Sleek Under-chassis dark shadow masking */}
+          <ellipse cx="204" cy="169" rx="80" ry="4" fill="#000000" opacity="0.75" />
         </g>
       </svg>
 
       {!iconOnly && (
-        <div className="flex flex-col justify-center leading-none">
-          <div className="flex items-baseline space-x-1">
-            <span className="font-sans text-xl font-black uppercase tracking-tight text-white mb-0.5">
-              EPIC RIDE
-            </span>
-          </div>
-          <div className="flex items-center space-x-1.5">
-            <span className="text-[10px] font-black uppercase tracking-[0.25em] text-[#FF6B00] font-mono">
+        <div className="flex flex-col justify-center leading-none mt-1">
+          <span className="font-serif text-2xl font-black uppercase tracking-wide text-white leading-none">
+            EPIC RIDE
+          </span>
+          <div className="flex items-center space-x-1.5 mt-1">
+            <span className="text-[10px] font-bold uppercase tracking-[0.34em] text-[#FF6B00] font-sans">
               AND TRANSPORT
             </span>
           </div>
-          <span className="text-[8px] font-bold uppercase tracking-[0.14em] text-gray-400 font-mono mt-0.5">
-            CHAUFFEURED SERVICES
+          <span className="text-[8px] font-semibold uppercase tracking-[0.16em] text-cyan-400/80 font-mono mt-1">
+            TEXAS CHAUFFEURED LUXURY
           </span>
         </div>
       )}
@@ -162,9 +186,9 @@ export function Logo({ className = "h-11", iconOnly = false, textColor = "text-w
   );
 }
 
-export function LogoIcon({ className = "h-10 w-10" }: { className?: string }) {
+export function LogoIcon({ className = "h-11 w-11" }: { className?: string }) {
   return (
-    <div className={`relative ${className} flex items-center justify-center bg-[#050B18] border border-[#FF6B00]/20 rounded-md p-1 shadow-inner overflow-hidden group`}>
+    <div className={`relative ${className} flex items-center justify-center bg-[#050B18] border border-[#FF6B00]/20 rounded-md p-0.5 shadow-inner overflow-hidden group`}>
       {/* Background glow pulse */}
       <div className="absolute inset-0 bg-[#FF6B00]/5 group-hover:bg-[#FF6B00]/10 transition-colors duration-300" />
       <Logo iconOnly className="h-full w-full" />
