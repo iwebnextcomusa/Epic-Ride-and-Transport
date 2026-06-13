@@ -218,8 +218,29 @@ export default function HomeSection({ setActiveTab, onOpenBooking }: HomeSection
             </div>
 
             {/* Right Column: Sleek, high-fidelity Quick Booking Form card */}
-            <div className="lg:col-span-6 w-full font-sans">
-              <div className="rounded-sm border border-[#FF6B00]/30 border-t-2 border-t-[#FF6B00] bg-[#0A192F]/80 p-6 backdrop-blur-md shadow-[0_0_50px_-12px_rgba(255,107,0,0.35)] relative transition-all duration-300 hover:shadow-[0_0_50px_0_rgba(255,107,0,0.25)] hover:border-[#FF6B00]/55">
+            <div className="lg:col-span-6 w-full font-sans relative">
+              {/* Premium Flashing 'Book Now' Indicator Button */}
+              <div className="flex justify-center lg:justify-start mb-4">
+                <button
+                  onClick={() => {
+                    const el = document.getElementById("booking-card-anchor");
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }
+                  }}
+                  className="relative inline-flex items-center space-x-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#FF6B00] to-amber-500 text-white text-xs font-extrabold uppercase tracking-[0.2em] shadow-[0_0_25px_rgba(255,107,0,0.6)] transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer"
+                  style={{ animation: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite" }}
+                >
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                  </span>
+                  <span>Book Now</span>
+                  <span className="text-[10px] opacity-85 group-hover:translate-x-1.5 transition-transform duration-200">→</span>
+                </button>
+              </div>
+
+              <div id="booking-card-anchor" className="rounded-sm border border-[#FF6B00]/30 border-t-2 border-t-[#FF6B00] bg-[#0A192F]/80 p-6 backdrop-blur-md shadow-[0_0_50px_-12px_rgba(255,107,0,0.35)] relative transition-all duration-300 hover:shadow-[0_0_50px_0_rgba(255,107,0,0.25)] hover:border-[#FF6B00]/55">
                 
                 {/* Secure Seal Banner header */}
                 <div className="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
