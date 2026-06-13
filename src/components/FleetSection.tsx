@@ -12,9 +12,9 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
     {
       id: "taxi-sedan",
       name: "Standard Taxi Sedans",
-      category: "Taxi & Fast Comutes",
+      category: "Taxi & Fast Commutes",
       capacity: "1-4 Passengers",
-      luggage: "3 Bagages",
+      luggage: "3 Bags",
       features: [
         "Economical flat rates",
         "Air conditioned",
@@ -29,12 +29,12 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
       name: "Luxury SUVs",
       category: "Business & Executive",
       capacity: "1-6 Passengers",
-      luggage: "6 Bagages",
+      luggage: "6 Bags",
       features: [
         "Plush black leather",
         "Wi-Fi & USB charge ports",
         "Complimentary bottled water",
-        "Tri-zone climate climate control"
+        "Tri-zone climate control"
       ],
       rateInfo: "Rates start at $75/hour (2hr min)",
       imagePlaceholder: "🚙"
@@ -44,7 +44,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
       name: "Casino Trips from Texas to Louisiana",
       category: "Gaming & Interstate Tours",
       capacity: "1-10 Passengers",
-      luggage: "4 Bagages",
+      luggage: "4 Bags",
       features: [
         "Direct luxury round-trip transfers",
         "Servicing Lake Charles & Shreveport",
@@ -59,7 +59,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
       name: "Executive Vehicles",
       category: "Corporate & Group Tours",
       capacity: "1-14 Passengers",
-      luggage: "14 Bagages",
+      luggage: "14 Bags",
       features: [
         "Standing room interior heights",
         "Deep individual recline seats",
@@ -74,7 +74,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
       name: "Mini Buses",
       category: "Group Event Shuttles",
       capacity: "1-28 Passengers",
-      luggage: "28 Bagages",
+      luggage: "28 Bags",
       features: [
         "Dual reading lights per row",
         "Overhead storage bins",
@@ -89,7 +89,7 @@ export default function FleetSection({ setActiveTab, onSelectVehicle }: FleetSec
       name: "Charter Buses",
       category: "Heavy Fleet Coach",
       capacity: "1-56 Passengers",
-      luggage: "56 Bagages",
+      luggage: "56 Bags",
       features: [
         "Onboard sanitary restroom",
         "Under-bus massive storage bays",

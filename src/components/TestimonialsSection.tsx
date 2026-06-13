@@ -15,7 +15,7 @@ export default function TestimonialsSection({ setActiveTab }: TestimonialsSectio
       location: "Houston, TX",
       rating: 5,
       serviceType: "Texas to Louisiana Casino Trip",
-      comment: "Absolutely exceptional service from Epic Ride! The round-trip transit to Lake Charles for our group gaming escape was spotless, comfortable, and perfectly timed. Our chauffeur handled the interstate drive with epitome of professional poise. Truly premium.",
+      comment: "Absolutely exceptional service from Epic Ride! The round-trip transit to Lake Charles for our group gaming escape was spotless, comfortable, and perfectly timed. Our chauffeur handled the interstate drive with the epitome of professional poise. Truly premium.",
       date: "May 14, 2026"
     },
     {
